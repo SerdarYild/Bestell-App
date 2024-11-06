@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(240, 240, 240);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(186, 186, 186, 0.9);    /* color of the scroll thumb */
+    border-radius: 16px;       /* roundness of the scroll thumb */
+    border: 3px solid #e3e5e7;  /* creates padding around scroll thumb */
+  }

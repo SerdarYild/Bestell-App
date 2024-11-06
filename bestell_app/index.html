@@ -1,0 +1,46 @@
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestell-App</title>
+    <link rel="icon" href="img/faviconba.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="standart.css" />
+    <script src="arrays.js"></script>
+    <script src="templates.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="render()">
+    <header class="header">
+      <img class="img-logo" src="img/Logoba.png" alt="" />
+    </header>
+
+    <section id="placeOrders" class="side-container">
+      <section id="menuWrapper" class="menu-wrapper">
+        <div class="menu-img-button">
+          <img class="img-burger" src="img/imgburger.jpg" alt="">
+          <img class="img-adress" src="img/adressimg.jpg" alt="">
+        </div>  
+        <div id="menuList" class="menu-list"></div>
+        <div id="theDishes" class="menu-container"></div>
+      </section>
+      <section id="basketOrders" class="card-container display_none">
+        <div class="sticky">
+          <div class="order-items">
+            <h2>Bestellung</h2></div>
+          <div class="order-menu" id="orderMenu"></div>
+          <div class="total-sum" id="totalSum"></div>
+        </div>
+      </section>
+    </section>
+
+    <div id="mobileBasket" class="basket-open-button-container">
+      <a id="openOrder" class="basket-open-button" onclick="openBasket()" href="#"> öffnen</a>
+      <div id="mobileOrder" class="mobil-order"></div>
+    </div>
+
+    <footer class="footer">
+      <img class="logo" src="img/footerfollow.png" alt="" />
+    </footer>
+  </body>
+</html>
